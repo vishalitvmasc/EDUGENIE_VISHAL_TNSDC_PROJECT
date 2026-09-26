@@ -1,0 +1,385 @@
+:root {
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    color: #172033;
+
+    background: #f5f7fb;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+}
+
+
+.hero {
+
+    padding:
+        64px
+        20px
+        72px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #16213e,
+            #284a7b
+        );
+
+    color: white;
+}
+
+
+.container {
+
+    width:
+        min(
+            980px,
+            calc(100% - 32px)
+        );
+
+    margin:
+        0 auto;
+}
+
+
+.brand {
+
+    font-weight: 800;
+
+    letter-spacing: .04em;
+
+    margin-bottom: 22px;
+}
+
+
+.hero h1 {
+
+    max-width: 720px;
+
+    margin:
+        0 0 14px;
+
+    font-size:
+        clamp(
+            2rem,
+            5vw,
+            3.7rem
+        );
+
+    line-height: 1.04;
+}
+
+
+.hero p {
+
+    max-width: 700px;
+
+    margin: 0;
+
+    font-size: 1.08rem;
+
+    opacity: .9;
+}
+
+
+.app-shell {
+
+    margin-top: -36px;
+
+    padding-bottom: 48px;
+}
+
+
+.card {
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 26px;
+
+    margin-bottom: 22px;
+
+    box-shadow:
+        0 12px 35px
+        rgba(
+            20,
+            34,
+            60,
+            .09
+        );
+}
+
+
+.controls {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr
+        140px;
+
+    gap: 16px;
+
+    margin-bottom: 22px;
+}
+
+
+label {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    font-weight: 650;
+
+    font-size: .92rem;
+}
+
+
+select,
+input,
+textarea {
+
+    width: 100%;
+
+    border:
+        1px solid
+        #d8deea;
+
+    border-radius: 10px;
+
+    padding:
+        12px
+        13px;
+
+    font: inherit;
+
+    background: white;
+}
+
+
+textarea {
+
+    resize: vertical;
+
+    margin:
+        8px
+        0
+        16px;
+}
+
+
+select:focus,
+input:focus,
+textarea:focus {
+
+    outline:
+        3px solid
+        rgba(
+            54,
+            106,
+            190,
+            .15
+        );
+
+    border-color:
+        #5b84c7;
+}
+
+
+button {
+
+    border: 0;
+
+    border-radius: 10px;
+
+    padding:
+        13px
+        18px;
+
+    font-weight: 750;
+
+    font-size: 1rem;
+
+    cursor: pointer;
+
+    background: #2459a6;
+
+    color: white;
+}
+
+
+button:hover {
+    background: #1d4a8d;
+}
+
+
+button:disabled {
+
+    opacity: .65;
+
+    cursor: wait;
+}
+
+
+.result-heading {
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    gap: 12px;
+
+    align-items:
+        center;
+}
+
+
+.result-heading h2 {
+    margin-top: 0;
+}
+
+
+.source {
+
+    font-size: .78rem;
+
+    background: #eef3fb;
+
+    padding:
+        6px
+        9px;
+
+    border-radius: 999px;
+}
+
+
+.answer {
+
+    white-space: pre-wrap;
+
+    line-height: 1.7;
+}
+
+
+.quiz-question {
+
+    border:
+        1px solid
+        #e1e6ef;
+
+    border-radius: 12px;
+
+    padding: 18px;
+
+    margin:
+        14px 0;
+}
+
+
+.quiz-question h3 {
+    margin-top: 0;
+}
+
+
+.quiz-option {
+
+    display: block;
+
+    padding:
+        10px
+        12px;
+
+    margin:
+        8px 0;
+
+    border-radius: 9px;
+
+    background: #f7f9fc;
+
+    cursor: pointer;
+}
+
+
+.quiz-feedback {
+
+    margin-top: 12px;
+
+    font-weight: 650;
+}
+
+
+.error {
+
+    margin:
+        14px 0 0;
+
+    color: #b42318;
+
+    background: #fff0ef;
+
+    padding: 12px;
+
+    border-radius: 10px;
+}
+
+
+.hidden {
+    display: none !important;
+}
+
+
+footer {
+
+    text-align: center;
+
+    padding:
+        28px
+        16px
+        42px;
+
+    color: #667085;
+
+    font-size: .9rem;
+}
+
+
+@media (max-width: 700px) {
+
+    .controls {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .hero {
+
+        padding-top: 42px;
+    }
+
+
+    .card {
+
+        padding: 20px;
+    }
+
+}
